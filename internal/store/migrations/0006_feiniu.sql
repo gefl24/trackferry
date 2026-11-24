@@ -1,6 +1,0 @@
--- Tracks may come from 飞牛音乐 instead of the music directory.
-ALTER TABLE tracks ADD COLUMN guid TEXT NOT NULL DEFAULT '';
-ALTER TABLE tracks ADD COLUMN cover TEXT NOT NULL DEFAULT '';
-ALTER TABLE tracks ADD COLUMN album_id TEXT NOT NULL DEFAULT '';
-ALTER TABLE tracks ADD COLUMN favorite INTEGER NOT NULL DEFAULT 0;
-ALTER TABLE tracks ADD COLUMN added_ms INTEGER NOT NULL DEFAULT 0;
