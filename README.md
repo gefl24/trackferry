@@ -26,6 +26,14 @@
 
 <br>
 
+> **这是衍生版，在上游 [madrays/trackferry](https://github.com/madrays/trackferry) 的基础上加了 LX Music Server 音源。**
+>
+> - 上游版权归 madrays 所有，按 MIT 许可发布；本仓库沿用同一许可，`LICENSE` 里的原始版权声明保留不动。
+> - 镜像由 GitHub Actions 自动构建，发布在 Docker Hub：**[geelonn/trackferry-lx](https://hub.docker.com/r/geelonn/trackferry-lx)**。**拉 `madrays/trackferry` 的官方镜像拿到的是原版，不含这里的改动。**
+> - 与上游的差别见 [CHANGELOG](CHANGELOG.md)。
+
+<br>
+
 TrackFerry 让小爱音箱播放你 NAS 上的歌。说一句“播放潮汐来信”，它先查飞牛音乐，再查酷我、酷狗、咪咕。都没有时，小爱照常回答。
 
 音箱不用刷机，NAS 上跑一个 Docker 容器就行。
