@@ -1,7 +1,0 @@
-# 从源码构建，叠加在 compose.yaml 上使用：
-#   docker compose -f compose.yaml -f compose.build.yaml up -d --build
-services:
-  trackferry:
-    image: trackferry:local
-    pull_policy: build
-    build: .
