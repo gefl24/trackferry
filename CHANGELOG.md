@@ -2,7 +2,7 @@
 
 格式遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，版本号遵循[语义化版本](https://semver.org/lang/zh-CN/)。
 
-## [未发布]
+## [魔改版]- 2026-11-24
 
 ### 新增
 - 可以把自建的 LX Music Server 接进来当第二道音源：曲库没有的歌先问它（3 秒），它也没有再问酷我、酷狗、咪咕。配置见 `TRACKFERRY_LX_*` / `lx_server`，默认关闭，不配时行为与以前完全一样
