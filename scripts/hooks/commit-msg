@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# The message: Chinese, detailed, real line breaks, no tool attribution.
-exec node "$(git rev-parse --show-toplevel)/scripts/check-commits.mjs" --file "$1"
