@@ -4,6 +4,20 @@
 
 ## [未发布]
 
+### 新增
+- 可以把自建的 LX Music Server 接进来当第二道音源：曲库没有的歌先问它（3 秒），它也没有再问酷我、酷狗、咪咕。配置见 `TRACKFERRY_LX_*` / `lx_server`，默认关闭，不配时行为与以前完全一样
+- 镜像改为自动构建：推送 `main` 或打 `v*` 标签时由 GitHub Actions 构建 amd64 与 arm64 两个架构并推到 Docker Hub，见 `.github/workflows/docker.yml`。`latest` 跟 `main` 走，另发 `sha-<提交>` 与语义化版本标签
+- 新增 [用镜像部署](docs/dockerhub.md)：镜像与标签说明、最短部署步骤、把 LX Server 接进来、地址怎么写才连得上、日常运维与回滚、`scratch` 镜像没有 shell 带来的操作差异
+- 新增 `compose.simple.yaml`：只有必需项的最简部署文件，改一行就能起；`compose.yaml` 仍是有完整注释的那份
+
+### 变更
+- `compose.yaml`、`compose.bridge.yaml` 里的镜像由 `madrays/trackferry` 换成 `geelonn/trackferry-lx`，装好即是带 LX 音源的版本
+
+### 说明
+- 打开后多一层“LX Server”的音源记录，命中时三家平台一次请求都不会收到；超时、报错、没有结果都会回落到原来的顺序，全部落空仍由小爱照常回答
+- LX Server 那一步会把配置里的平台同时问一遍，靠前的优先，等待时间取决于最慢的那家而不是四家相加；命中路径在管理页的“路由”里能看到独立的 LX 一站，没配时不会多出这一站
+- 镜像里的二进制把自更新地址指向本仓库，而本仓库没有 Release，所以“设置 → 关于”查更新时会安静地当作“没有新版本”，不会把用户引导去装回原版；升级请用 `docker compose pull`
+
 ## [1.3.0] - 2026-11-24
 
 ### 新增
