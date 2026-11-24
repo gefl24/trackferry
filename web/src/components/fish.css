@@ -1,4 +1,0 @@
-.fish { display: block; width: 100%; aspect-ratio: 1; }
-.fish-water { aspect-ratio: 2 / 3; }
-.raft .fish, .auth-raft .fish { pointer-events: auto; cursor: pointer; touch-action: manipulation; }
-.boot .fish { width: 168px; }
