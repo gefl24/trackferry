@@ -2,26 +2,6 @@
 
 <img src="docs/images/hero.svg" alt="TrackFerry" width="100%">
 
-<br>
-
-[![Release](https://img.shields.io/github/v/release/madrays/trackferry?style=for-the-badge&logo=github&label=Release&labelColor=142c38&color=f2a98f)](https://github.com/madrays/trackferry/releases)
-[![Stars](https://img.shields.io/github/stars/madrays/trackferry?style=for-the-badge&logo=github&label=Stars&labelColor=142c38&color=f8c27e)](https://github.com/madrays/trackferry/stargazers)
-[![Docker Pulls](https://img.shields.io/docker/pulls/madrays/trackferry?style=for-the-badge&logo=docker&logoColor=white&label=Pulls&labelColor=142c38&color=8fd3d6)](https://hub.docker.com/r/madrays/trackferry)
-[![License](https://img.shields.io/badge/License-MIT-b7e4c7?style=for-the-badge&labelColor=142c38)](LICENSE)
-
-<img src="https://img.shields.io/badge/amd64_%7C_arm64-142c38?style=flat-square&logo=linux&logoColor=white" alt="amd64 与 arm64">
-<img src="https://img.shields.io/badge/Go-142c38?style=flat-square&logo=go" alt="Go">
-<img src="https://img.shields.io/badge/React-142c38?style=flat-square&logo=react" alt="React">
-<img src="https://img.shields.io/badge/SQLite-142c38?style=flat-square&logo=sqlite&logoColor=8fd3d6" alt="SQLite">
-
-<br><br>
-
-<a href="#快速开始"><img src="docs/images/tab-start.svg" alt="快速开始" height="44"></a>
-<a href="#功能"><img src="docs/images/tab-features.svg" alt="功能" height="44"></a>
-<a href="#界面"><img src="docs/images/tab-screens.svg" alt="界面" height="44"></a>
-<a href="#文档"><img src="docs/images/tab-docs.svg" alt="文档" height="44"></a>
-<a href="https://github.com/madrays/trackferry"><img src="docs/images/tab-star.svg" alt="点个星标" height="44"></a>
-
 </div>
 
 <br>
